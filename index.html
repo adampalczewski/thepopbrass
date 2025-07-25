@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pop Brass</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(270deg, #ff0000, #ff9900, #33cc33, #00ccff, #9933ff, #ff0066);
+      background-size: 1200% 1200%;
+      animation: backgroundShift 15s ease infinite;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      padding: 2rem;
+    }
+
+    .rainbow-text {
+      font-size: 5rem;
+      font-weight: bold;
+      background: linear-gradient(270deg, #ff0000, #ff9900, #33cc33, #00ccff, #9933ff, #ff0066);
+      background-size: 1200% 1200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbowGlow 5s linear infinite;
+    }
+
+    .tagline {
+      font-size: 1.8rem;
+      color: #fff;
+      text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffff;
+      margin-top: 2rem;
+    }
+
+    .contact {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    @keyframes rainbowGlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes backgroundShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rainbow-text">The Pop Brass</div>
+  <div class="tagline">Your Favourite Pop Hits! BRASSIFIED!</div>
+  <div class="contact">Contact: <a href="mailto:Babelbrass@gmail.com" style="color: #fff; text-decoration: underline;">Babelbrass@gmail.com</a></div>
+</body>
+</html>
